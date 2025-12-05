@@ -470,13 +470,131 @@
                     </div>
                     <p class="panel">Explanation</p>
                 </div>
+
+                <div class="question intermediate">
+                    The base point on an elliptic curve is used for:
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer3a">
+                      <label>
+                        <input type="radio" name="question3" value="a">
+                        a: Multiplying with private key to generate the public key
+                      </label>
+                      <a href="#" id="explanation3a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3b">
+                      <label>
+                        <input type="radio" name="question3" value="b">
+                        b: Decrypting messages
+                      </label>
+                      <a href="#" id="explanation3b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3c">
+                      <label>
+                        <input type="radio" name="question3" value="c">
+                        c: Hashing messages
+                      </label>
+                      <a href="#" id="explanation3c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3d">
+                      <label>
+                        <input type="radio" name="question3" value="d">
+                        d: Generating random numbers
+                      </label>
+                      <a href="#" id="explanation3d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+
+                 <div class="question intermediate">
+                    ECDH shared secret calculation is secure because:
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer4a">
+                      <label>
+                        <input type="radio" name="question4" value="a">
+                        a: It uses long keys only
+                      </label>
+                      <a href="#" id="explanation4a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4b">
+                      <label>
+                        <input type="radio" name="question4" value="b">
+                        b: The elliptic-curve discrete logarithm problem is hard to solve
+                      </label>
+                      <a href="#" id="explanation4b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4c">
+                      <label>
+                        <input type="radio" name="question4" value="c">
+                        c: Both parties exchange private keys securely
+                      </label>
+                      <a href="#" id="explanation4c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4d">
+                      <label>
+                        <input type="radio" name="question4" value="d">
+                        d: It uses symmetric encryption
+                      </label>
+                      <a href="#" id="explanation4d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+
+                 <div class="question intermediate">
+                    Which of the following is true about ECDH?
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer5a">
+                      <label>
+                        <input type="radio" name="question5" value="a">
+                        a: Both parties derive the same shared secret independently
+                      </label>
+                      <a href="#" id="explanation5a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer5b">
+                      <label>
+                        <input type="radio" name="question5" value="b">
+                        b: The shared secret is sent over the network
+                      </label>
+                      <a href="#" id="explanation5b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer5c">
+                      <label>
+                        <input type="radio" name="question5" value="c">
+                        c: Only one party knows the shared secret
+                      </label>
+                      <a href="#" id="explanation5c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer5d">
+                      <label>
+                        <input type="radio" name="question5" value="d">
+                        d: ECDH cannot be combined with symmetric encryption
+                      </label>
+                      <a href="#" id="explanation5d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+
                </div>
                 <button id="submit" class="btn btn-primary">Submit Quiz</button>
                 <div id="results"></div>
           </div>
             
             <script>
-              const myQuestions = [{"question":"How is the secret key (K) calculated for User B in the ECDH Key Exchange Protocol?","answers":{"a":"By adding User B's private key to User A's public key.","b":"By multiplying User B's private key with a generator point on the elliptic curve (G).","c":"By subtracting User B's private key from a random number.","d":"By dividing User B's private key by a prime number (n)."},"explanations":{"a":"Incorrect. The secret key for User B is not calculated by adding their private key to User A's public key.","b":"Correct. The secret key for User B is derived by multiplying their private key with User A's public key in the ECDH Key Exchange Protocol.","c":"Incorrect. Subtracting User B's private key from a random number is not the correct method for calculating the secret key.","d":"Incorrect. Dividing User B's private key by a prime number (n) is not the correct method for calculating the secret key."},"correctAnswer":"b","difficulty":"intermediate"},{"question":"What does the shared secret key (K) represent in the ECDH Key Exchange Protocol?","answers":{"a":"User A's private key.","b":"User B's private key.","c":"A randomly generated value.","d":"A common secret known to both User A and User B."},"explanations":{"a":"Incorrect. The shared secret key (K) does not represent User A's private key.","b":"Incorrect. The shared secret key (K) does not represent User B's private key.","c":"Incorrect. The shared secret key (K) is not a randomly generated value.","d":"Correct. The shared secret key (K) is a common secret known only to User A and User B, ensuring secure communication."},"correctAnswer":"d","difficulty":"intermediate"},{"question":"What role does the generator point (G) play in the ECDH Key Exchange Protocol?","answers":{"a":"It determines the size of the public keys.","b":"It is used to generate a random number for key derivation.","c":"It serves as the base point for elliptic curve operations.","d":"It specifies the prime number (n) used in key calculations."},"explanations":{"a":"Incorrect. The generator point (G) does not determine the size of the public keys.","b":"Incorrect. The generator point (G) is not used to generate a random number for key derivation.","c":"Correct. The generator point (G) serves as the base point for elliptic curve operations in the ECDH Key Exchange Protocol.","d":"Incorrect. The generator point (G) does not specify the prime number (n) used in key calculations."},"correctAnswer":"c","difficulty":"intermediate"}];
+              const myQuestions = [{"question":"How is the secret key (K) calculated for User B in the ECDH Key Exchange Protocol?","answers":{"a":"By adding User B's private key to User A's public key.","b":"By multiplying User B's private key with a generator point on the elliptic curve (G).","c":"By subtracting User B's private key from a random number.","d":"By dividing User B's private key by a prime number (n)."},"explanations":{"a":"Incorrect. The secret key for User B is not calculated by adding their private key to User A's public key.","b":"Correct. The secret key for User B is derived by multiplying their private key with User A's public key in the ECDH Key Exchange Protocol.","c":"Incorrect. Subtracting User B's private key from a random number is not the correct method for calculating the secret key.","d":"Incorrect. Dividing User B's private key by a prime number (n) is not the correct method for calculating the secret key."},"correctAnswer":"b","difficulty":"intermediate"},{"question":"What does the shared secret key (K) represent in the ECDH Key Exchange Protocol?","answers":{"a":"User A's private key.","b":"User B's private key.","c":"A randomly generated value.","d":"A common secret known to both User A and User B."},"explanations":{"a":"Incorrect. The shared secret key (K) does not represent User A's private key.","b":"Incorrect. The shared secret key (K) does not represent User B's private key.","c":"Incorrect. The shared secret key (K) is not a randomly generated value.","d":"Correct. The shared secret key (K) is a common secret known only to User A and User B, ensuring secure communication."},"correctAnswer":"d","difficulty":"intermediate"},{"question":"What role does the generator point (G) play in the ECDH Key Exchange Protocol?","answers":{"a":"It determines the size of the public keys.","b":"It is used to generate a random number for key derivation.","c":"It serves as the base point for elliptic curve operations.","d":"It specifies the prime number (n) used in key calculations."},"explanations":{"a":"Incorrect. The generator point (G) does not determine the size of the public keys.","b":"Incorrect. The generator point (G) is not used to generate a random number for key derivation.","c":"Correct. The generator point (G) serves as the base point for elliptic curve operations in the ECDH Key Exchange Protocol.","d":"Incorrect. The generator point (G) does not specify the prime number (n) used in key calculations."},"correctAnswer":"c","difficulty":"intermediate"},{"question":"The base point on an elliptic curve is used for:","answers":{"a":"Multiplying with private key to generate the public key","b":"Decrypting messages","c":"Hashing messages","d":"Generating random numbers"},"explanations":{"a":"Correct. The base point on an elliptic curve is used in conjunction with a private key to generate the corresponding public key through elliptic curve point multiplication.","b":"Incorrect. Decrypting messages is not the function of the base point on an elliptic curve.","c":"Incorrect. Hashing messages is not related to the base point on an elliptic curve.","d":"Incorrect. Generating random numbers is not the purpose of the base point on an elliptic curve."},"correctAnswer":"a","difficulty":"intermediate"},{"question":"ECDH shared secret calculation is secure because:","answers":{"a":"It uses long keys only","b":"The elliptic-curve discrete logarithm problem is hard to solve","c":"Both parties exchange private keys securely","d":"It uses symmetric encryption"},"explanations":{"a":"Incorrect. While longer keys can enhance security, the primary reason for ECDH's security is not solely based on key length.","b":"Correct. The security of ECDH relies on the difficulty of solving the elliptic-curve discrete logarithm problem, making it computationally infeasible for attackers to derive the shared secret from public information.","c":"Incorrect. In ECDH, private keys are never exchanged; only public keys are shared.","d":"Incorrect. ECDH is a key exchange protocol and does not inherently use symmetric encryption; it establishes a shared secret that can be used for symmetric encryption later."},"correctAnswer":"b","difficulty":"intermediate"},{"question":"Which of the following is true about ECDH?","answers":{"a":"Both parties derive the same shared secret independently","b":"The shared secret is sent over the network","c":"Only one party knows the shared secret","d":"ECDH cannot be combined with symmetric encryption"},"explanations":{"a":"Correct. In ECDH, both parties independently compute the same shared secret using their private keys and each other's public keys without directly sharing the secret itself.","b":"Incorrect. The shared secret is never sent over the network; it is derived independently by both parties.","c":"Incorrect. Both parties know the shared secret after performing their calculations.","d":"Incorrect. ECDH can be combined with symmetric encryption to securely exchange keys for symmetric encryption algorithms."},"correctAnswer":"a","difficulty":"intermediate"}];
             </script>
               <script src="./assets/js/assessment_v2.js"></script>  
           <div class="bug-report-mobile">

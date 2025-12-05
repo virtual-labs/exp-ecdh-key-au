@@ -470,13 +470,131 @@
                     </div>
                     <p class="panel">Explanation</p>
                 </div>
+
+                 <div class="question intermediate">
+                    The main purpose of ECDH is:
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer3a">
+                      <label>
+                        <input type="radio" name="question3" value="a">
+                        a: Encrypt messages directly
+                      </label>
+                      <a href="#" id="explanation3a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3b">
+                      <label>
+                        <input type="radio" name="question3" value="b">
+                        b: Exchange a shared secret securely
+                      </label>
+                      <a href="#" id="explanation3b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3c">
+                      <label>
+                        <input type="radio" name="question3" value="c">
+                        c: Generate digital signatures
+                      </label>
+                      <a href="#" id="explanation3c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3d">
+                      <label>
+                        <input type="radio" name="question3" value="d">
+                        d: Compress data
+                      </label>
+                      <a href="#" id="explanation3d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+
+                 <div class="question intermediate">
+                    In ECDH, the shared secret is derived from:
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer4a">
+                      <label>
+                        <input type="radio" name="question4" value="a">
+                        a: Both parties’ private keys
+                      </label>
+                      <a href="#" id="explanation4a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4b">
+                      <label>
+                        <input type="radio" name="question4" value="b">
+                        b: Both parties’ public keys
+                      </label>
+                      <a href="#" id="explanation4b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4c">
+                      <label>
+                        <input type="radio" name="question4" value="c">
+                        c: One party’s private key and the other’s public key
+                      </label>
+                      <a href="#" id="explanation4c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4d">
+                      <label>
+                        <input type="radio" name="question4" value="d">
+                        d: Only a pre-shared key
+                      </label>
+                      <a href="#" id="explanation4d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+
+                 <div class="question intermediate">
+                    Advantages of using elliptic curves over classic Diffie–Hellman include:
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer5a">
+                      <label>
+                        <input type="radio" name="question5" value="a">
+                        a: Smaller key size
+                      </label>
+                      <a href="#" id="explanation5a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer5b">
+                      <label>
+                        <input type="radio" name="question5" value="b">
+                        b: Faster computation
+                      </label>
+                      <a href="#" id="explanation5b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer5c">
+                      <label>
+                        <input type="radio" name="question5" value="c">
+                        c: Reduced resource usage
+                      </label>
+                      <a href="#" id="explanation5c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer5d">
+                      <label>
+                        <input type="radio" name="question5" value="d">
+                        d: All of the above
+                      </label>
+                      <a href="#" id="explanation5d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+
                </div>
                 <button id="submit" class="btn btn-primary">Submit Quiz</button>
                 <div id="results"></div>
           </div>
             
             <script>
-              const myQuestions = [{"question":"What is the purpose of the Elliptic-curve Diffie–Hellman (ECDH) Key Exchange Protocol?","answers":{"a":"To encrypt data during transmission.","b":"To establish a shared secret key between two parties over an insecure communication channel.","c":"To authenticate users in a network.","d":"To compress data before transmission."},"explanations":{"a":"Incorrect. The primary purpose of ECDH is to establish a shared secret key, not to directly encrypt data during transmission.","b":"Correct. The ECDH Key Exchange Protocol is designed to establish a shared secret key securely between two parties over an insecure communication channel.","c":"Incorrect. ECDH is focused on key exchange rather than user authentication.","d":"Incorrect. ECDH is not designed for data compression."},"correctAnswer":"b","difficulty":"intermediate"},{"question":"How is User A's public key calculated in the ECDH Key Exchange Protocol?","answers":{"a":"By adding User A's private key to a fixed constant.","b":"By multiplying User A's private key with a generator point on the elliptic curve (G).","c":"By subtracting User A's private key from a random number.","d":"By dividing User A's private key by a prime number (n)."},"explanations":{"a":"Incorrect. User A's public key is calculated through multiplication, not addition.","b":"Correct. User A's public key is computed by multiplying their private key with a generator point on the elliptic curve, denoted as G.","c":"Incorrect. User A's public key is calculated through multiplication, not subtraction.","d":"Incorrect. User A's public key is calculated through multiplication, not division."},"correctAnswer":"b","difficulty":"intermediate"},{"question":"Why is it important for the private keys (nA and nB) to be chosen such that (nA < n) and (nB < n) in ECDH Key Exchange?","answers":{"a":"To speed up the key exchange process.","b":"To ensure that the public keys are small and easy to compute.","c":"To prevent potential vulnerabilities and ensure security.","d":"To reduce the computational load on the elliptic curve generator."},"explanations":{"a":"Incorrect. The size of private keys does not directly impact the speed of the key exchange process.","b":"Incorrect. The size of public keys is influenced by the choice of elliptic curve parameters, not the private key values.","c":"Correct. Choosing private keys within specific ranges helps prevent vulnerabilities and ensures the security of the key exchange process.","d":"Incorrect. The private key range does not significantly affect the computational load on the elliptic curve generator."},"correctAnswer":"c","difficulty":"intermediate"}];
+              const myQuestions = [{"question":"What is the purpose of the Elliptic-curve Diffie–Hellman (ECDH) Key Exchange Protocol?","answers":{"a":"To encrypt data during transmission.","b":"To establish a shared secret key between two parties over an insecure communication channel.","c":"To authenticate users in a network.","d":"To compress data before transmission."},"explanations":{"a":"Incorrect. The primary purpose of ECDH is to establish a shared secret key, not to directly encrypt data during transmission.","b":"Correct. The ECDH Key Exchange Protocol is designed to establish a shared secret key securely between two parties over an insecure communication channel.","c":"Incorrect. ECDH is focused on key exchange rather than user authentication.","d":"Incorrect. ECDH is not designed for data compression."},"correctAnswer":"b","difficulty":"intermediate"},{"question":"How is User A's public key calculated in the ECDH Key Exchange Protocol?","answers":{"a":"By adding User A's private key to a fixed constant.","b":"By multiplying User A's private key with a generator point on the elliptic curve (G).","c":"By subtracting User A's private key from a random number.","d":"By dividing User A's private key by a prime number (n)."},"explanations":{"a":"Incorrect. User A's public key is calculated through multiplication, not addition.","b":"Correct. User A's public key is computed by multiplying their private key with a generator point on the elliptic curve, denoted as G.","c":"Incorrect. User A's public key is calculated through multiplication, not subtraction.","d":"Incorrect. User A's public key is calculated through multiplication, not division."},"correctAnswer":"b","difficulty":"intermediate"},{"question":"Why is it important for the private keys (nA and nB) to be chosen such that (nA < n) and (nB < n) in ECDH Key Exchange?","answers":{"a":"To speed up the key exchange process.","b":"To ensure that the public keys are small and easy to compute.","c":"To prevent potential vulnerabilities and ensure security.","d":"To reduce the computational load on the elliptic curve generator."},"explanations":{"a":"Incorrect. The size of private keys does not directly impact the speed of the key exchange process.","b":"Incorrect. The size of public keys is influenced by the choice of elliptic curve parameters, not the private key values.","c":"Correct. Choosing private keys within specific ranges helps prevent vulnerabilities and ensures the security of the key exchange process.","d":"Incorrect. The private key range does not significantly affect the computational load on the elliptic curve generator."},"correctAnswer":"c","difficulty":"intermediate"},{"question":"The main purpose of ECDH is:","answers":{"a":"Encrypt messages directly","b":"Exchange a shared secret securely","c":"Generate digital signatures","d":"Compress data"},"explanations":{"a":"Incorrect. ECDH is not used for direct encryption of messages.","b":"Correct. The primary purpose of ECDH is to securely exchange a shared secret between two parties.","c":"Incorrect. ECDH is not designed for generating digital signatures.","d":"Incorrect. ECDH does not involve data compression."},"correctAnswer":"b","difficulty":"intermediate"},{"question":"In ECDH, the shared secret is derived from:","answers":{"a":"Both parties’ private keys","b":"Both parties’ public keys","c":"One party’s private key and the other’s public key","d":"Only a pre-shared key"},"explanations":{"a":"Incorrect. The shared secret is not derived solely from private keys.","b":"Incorrect. The shared secret is not derived solely from public keys.","c":"Correct. The shared secret in ECDH is derived from one party's private key and the other party's public key.","d":"Incorrect. ECDH does not rely on a pre-shared key."},"correctAnswer":"c","difficulty":"intermediate"},{"question":"Advantages of using elliptic curves over classic Diffie–Hellman include:","answers":{"a":"Smaller key size","b":"Faster computation","c":"Reduced resource usage","d":"All of the above"},"explanations":{"a":"Correct. Elliptic curves provide equivalent security with smaller key sizes compared to classic Diffie–Hellman.","b":"Correct. Elliptic curve operations are generally faster than those used in classic Diffie–Hellman.","c":"Correct. Elliptic curves require less computational power and memory, making them more efficient.","d":"Correct. All of the mentioned advantages are true for elliptic curves compared to classic Diffie–Hellman."},"correctAnswer":"d","difficulty":"intermediate"}];
             </script>
               <script src="./assets/js/assessment_v2.js"></script>  
           <div class="bug-report-mobile">

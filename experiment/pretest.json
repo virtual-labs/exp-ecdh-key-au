@@ -51,6 +51,57 @@
       },
       "correctAnswer": "c",
       "difficulty": "intermediate"
+    },
+        {
+      "question": "The main purpose of ECDH is:",
+      "answers": {
+        "a": "Encrypt messages directly",
+        "b": "Exchange a shared secret securely",
+        "c": "Generate digital signatures",
+        "d": "Compress data"
+      },
+      "explanations": {
+        "a": "Incorrect. ECDH is used for key exchange, not direct encryption.",
+        "b": "Correct. ECDH is designed to securely exchange a shared secret key.",
+        "c": "Inorrect. Digital signatures are not the primary function of ECDH.",
+        "d": "Incorrect. Data compression is not related to ECDH."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+        {
+      "question": "In ECDH, the shared secret is derived from:",
+      "answers": {
+        "a": "Both parties’ private keys",
+        "b": "TBoth parties’ public keys",
+        "c": "One party’s private key and the other’s public key",
+        "d": "Only a pre-shared key"
+      },
+      "explanations": {
+        "a": "Incorrect. The shared secret is not derived from both private keys directly.",
+        "b": "Incorrect. The shared secret is not derived from both public keys directly.",
+        "c": "Correct. The shared secret is computed using one party's private key and the other party's public key.",
+        "d": "Incorrect. ECDH does not rely on a pre-shared key."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+        {
+      "question": "Advantages of using elliptic curves over classic Diffie–Hellman include:",
+      "answers": {
+        "a": "Smaller key size",
+        "b": "Faster computation",
+        "c": "Reduced resource usage",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "Incorrect. While elliptic curves do offer smaller key sizes, this is not the only advantage.",
+        "b": "Incorrect. Elliptic curves can provide faster computation, but this is not the only advantage.",
+        "c": "Incorrect. Elliptic curves can reduce resource usage, but this is not the only advantage.",
+        "d": "Correct. Elliptic curves provide all these advantages over classic Diffie–Hellman."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
     }
   ]
 }

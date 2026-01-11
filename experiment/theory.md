@@ -1,18 +1,9 @@
-# Elliptic-curve Diffie–Hellman (ECDH) Key Exchange Protocol
-The Elliptic-curve Diffie–Hellman (ECDH) Key Exchange Protocol is a cryptographic algorithm used to establish a shared secret key between two parties over an insecure communication channel. This process ensures secure communication by allowing the parties to derive a common secret without transmitting it directly.
+# Experiment 10: Elliptic-curve Diffie–Hellman (ECDH) Key Exchange Protocol
 
-## User Key Generation
-### User A's Key Generation
-1. **Private Key Selection (User A):** The private key for User A (\(nA\)) is chosen, satisfying the condition \(nA < n\).
-2. **Public Key Calculation (User A):** The corresponding public key (\(PA\)) is calculated using the formula \(PA = nA \times G\).
+## Elliptic-curve Diffie–Hellman (ECDH) Key Exchange Protocol
 
-### User B's Key Generation
-1. **Private Key Selection (User B):** Similarly, the private key for User B (\(nB\)) is chosen, ensuring \(nB < n\).
-2. **Public Key Calculation (User B):** The public key (\(PB\)) for User B is computed as \(PB = nB \times G\).
+The Elliptic-Curve Diffie–Hellman (ECDH) protocol is an asymmetric key exchange mechanism that enables two parties to establish a shared secret over an insecure channel without prior knowledge of each other’s private keys. ECDH is based on elliptic-curve cryptography (ECC), which provides equivalent security to traditional public-key systems like RSA or classic Diffie–Hellman but with much smaller key sizes, leading to faster computation and lower resource usage.
 
-## Secret Key Derivation
-1. **Secret Key Calculation (User A):** The secret key (\(K\)) for User A is determined by multiplying their private key (\(nA\)) with User B's public key (\(PB\)): \(K = nA \times PB\).
-   
-2. **Secret Key Calculation (User B):** Similarly, the secret key (\(K\)) for User B is calculated by multiplying their private key (\(nB\)) with User A's public key (\(PA\)): \(K = nB \times PA\).
+An elliptic curve is defined by an equation of the form y² = x³ + ax + b over a finite field, where the coefficients a and b satisfy certain conditions to avoid singularities. Points on this curve, together with a special point called the point at infinity, form an additive group with defined operations of point addition and scalar multiplication. These operations form the basis for ECC security: given a point on the curve and a multiple of it, it is computationally hard to determine the multiplier, known as the elliptic-curve discrete logarithm problem (ECDLP).
 
-Both User A and User B now possess a shared secret key (\(K\)).
+In the ECDH protocol, each party selects a private key (a random integer) and computes the corresponding public key by multiplying the private key with a predefined base point on the curve. The parties then exchange their public keys. Each party multiplies the received public key with their private key to derive the shared secret. The security of ECDH relies on the difficulty of solving the ECDLP, making it resistant to eavesdropping and providing a secure foundation for encrypted communication.

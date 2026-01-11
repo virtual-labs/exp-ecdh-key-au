@@ -51,6 +51,57 @@
       },
       "correctAnswer": "c",
       "difficulty": "intermediate"
+    },
+        {
+      "question": "The base point on an elliptic curve is used for:",
+      "answers": {
+        "a": "Multiplying with private key to generate the public key",
+        "b": "Decrypting messages",
+        "c": "Hashing messages",
+        "d": "Generating random numbers"
+      },
+      "explanations": {
+        "a": "Correct. The base point (G) is multiplied by the private key to generate the public key in elliptic curve cryptography.",
+        "b": "Incorrect. The base point is not used for decrypting messages.",
+        "c": "Incorrect. The base point is not used for hashing messages.",
+        "d": "Incorrect. The base point is not used for generating random numbers."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+        {
+      "question": "ECDH shared secret calculation is secure because:",
+      "answers": {
+        "a": "It uses long keys only",
+        "b": "The elliptic-curve discrete logarithm problem is hard to solve",
+        "c": "Both parties exchange private keys securely",
+        "d": "It uses symmetric encryption"
+      },
+      "explanations": {
+        "a": "Incorrect. While long keys can enhance security, the primary reason ECDH is secure is due to the mathematical properties of elliptic curves.",
+        "b": "Correct. The security of ECDH relies on the difficulty of solving the elliptic-curve discrete logarithm problem, making it computationally infeasible for attackers to derive private keys from public keys.",
+        "c": "Incorrect. In ECDH, private keys are never exchanged between parties.",
+        "d": "Incorrect. ECDH is an asymmetric key exchange protocol, not a symmetric encryption method."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+        {
+      "question": "Which of the following is true about ECDH?",
+      "answers": {
+        "a": "Both parties derive the same shared secret independently",
+        "b": "The shared secret is sent over the network",
+        "c": "Only one party knows the shared secret",
+        "d": "ECDH cannot be combined with symmetric encryption"
+      },
+      "explanations": {
+        "a": "Correct. In ECDH, both parties independently compute the same shared secret using their private keys and the other party's public key.",
+        "b": "Incorrect. The shared secret is never transmitted over the network; it is derived independently by both parties.",
+        "c": "Incorrect. Both parties know the shared secret after the key exchange.",
+        "d": "Incorrect. ECDH can be used in conjunction with symmetric encryption to secure communications."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
     }
   ]
 }

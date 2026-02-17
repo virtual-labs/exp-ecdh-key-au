@@ -1,1 +1,9 @@
-### Link your theory in here
+# Experiment 10: Elliptic-curve Diffie–Hellman (ECDH) Key Exchange Protocol
+
+## Elliptic-curve Diffie–Hellman (ECDH) Key Exchange Protocol
+
+The Elliptic-Curve Diffie–Hellman (ECDH) protocol is an asymmetric key exchange mechanism that enables two parties to establish a shared secret over an insecure channel without prior knowledge of each other’s private keys. ECDH is based on elliptic-curve cryptography (ECC), which provides equivalent security to traditional public-key systems like RSA or classic Diffie–Hellman but with much smaller key sizes, leading to faster computation and lower resource usage.
+
+An elliptic curve is defined by an equation of the form y² = x³ + ax + b over a finite field, where the coefficients a and b satisfy certain conditions to avoid singularities. Points on this curve, together with a special point called the point at infinity, form an additive group with defined operations of point addition and scalar multiplication. These operations form the basis for ECC security: given a point on the curve and a multiple of it, it is computationally hard to determine the multiplier, known as the elliptic-curve discrete logarithm problem (ECDLP).
+
+In the ECDH protocol, each party selects a private key (a random integer) and computes the corresponding public key by multiplying the private key with a predefined base point on the curve. The parties then exchange their public keys. Each party multiplies the received public key with their private key to derive the shared secret. The security of ECDH relies on the difficulty of solving the ECDLP, making it resistant to eavesdropping and providing a secure foundation for encrypted communication.
